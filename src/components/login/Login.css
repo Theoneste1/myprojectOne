@@ -1,0 +1,26 @@
+.login{
+    background-color: greenyellow;
+    
+}
+.picture{
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    
+}
+.login_info{
+    display:flex;
+}
+.personalinfo{
+    background-color: hotpink;
+    margin-left: 5px;
+}
+.log{
+    background-color: rebeccapurple;
+   
+}
+.logname{
+    background-color: royalblue;
+   
+    
+}
