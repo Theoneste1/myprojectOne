@@ -1,0 +1,10 @@
+.profile{
+    background-color: white;
+    border: solid black;
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    box-shadow:0 0 3px black;
+    /* transform: rotate(-30deg); */
+    
+}
