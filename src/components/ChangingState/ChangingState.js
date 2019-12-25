@@ -1,43 +1,37 @@
-import React,{Component} from 'react';
+// import React,{Component} from 'react';
+// import Person from './Person'
 
-class ChangingState extends Component
-{
-    // using of constructor 
-    constructor(props)
-    {
-    super(props); // super should be there
-    this.state={
-        color:"red",
-        name:"Tax",
-        year:2019
-    };
-}
+// class ChangingState extends Component
+// {
+//     return(
 
-    changingColor = () =>
-    {
-      this.setState(
-          { 
-            color:"green",
-            name: "Suzuki"
-    });
-}
-    render(){
-        return(
+    
+//     )
 
-           <div>
-    <p>My car was {this.state.name} changed into {this.changingColor}<br></br> 
-    {this.state.color} changed into {this.changingColor} thanks. </p>
 
-           <div> 
-               <button type="button" onClick={this.changingColor}>
-                   Change the state
-               </button>
-           </div>
+//     swithNameHandler = () =>
+//     {
+//       this.setState(
+//           { 
+//             persons:[
+//                 {name:'Maximilium',age:28},
+//                 {name:"Manu",age:30}
+//                 ]
+//     });
+// }
+//     render(){
+//         return(
 
-           </div>
-        );
+//            <div>
+//      <Person name={this.state.persons[0].name} age={this.state.persons[0].age}></Person>
+//      <Person name={this.state.persons[1].name} age={this.state.persons[1].age}></Person>
+
+//     <button onClick={this.swithNameHandler()}>switchNames</button>
+//            </div>
+//         );
    
-    }
-}
+//     }
+// }
 
-export default ChangingState
+
+// export default ChangingState
