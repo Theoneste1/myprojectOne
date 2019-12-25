@@ -12,12 +12,12 @@ class DisplayInfo extends Component {
     }
 
     // change the state method
-    handlechangeName=()=>{
+    handlechangeName=(newName, age, newName2, age2,)=>{
         this.setState({
     
           persons: [
-            {name:'Maximumum', age:'28'},
-            {name :'Manu', age:'29'},
+            {name: newName, age: age},
+            {name :newName2, age:age2},
             {name:'Theoneste', age:'31'}
                     ]
                   })
@@ -40,17 +40,34 @@ class DisplayInfo extends Component {
       render(){
     return(
         <div>
-        <Person name={this.state.persons[0].name}  age={this.state.persons[0].age}/>
-        <Person name ={this.state.persons[1].name}  age={this.state.persons[1].age}>
-          My hobbies: Racing</Person>
-        <Person name={this.state.persons[2].name}  age={this.state.persons[2].age}/>
+        <Person name={this.state.persons[0].name} 
+         age={this.state.persons[0].age}
+         click={this.handlechangeName} 
+         />
 
-        <button onClick={this.handlechangeName}>ChangeNames</button><br></br>
+        <Person name ={this.state.persons[1].name}  
+        age={this.state.persons[1].age}
+        click={this.handlechangeName} 
+        >
+          My hobbies: Racing
+           
+        </Person>
+
+        <Person name={this.state.persons[2].name} 
+         age={this.state.persons[2].age}
+         click={this.handlechangeName} 
+         />
+
+        <button onClick={this.handlechangeName.bind(this, 'Theodomir',12,'Kagano',23)}>ChangeNames</button><br></br>
         <button onClick={this.keepChangePreviousName}>Goback</button>
         </div>
     );
     
 }
 }
+
+// click={this.handlechangeName} this thing is declared
+// and it is supporting that if we click on even the text
+//we would be able to change the names as we said.
 
 export default DisplayInfo
