@@ -24,6 +24,21 @@ class DisplayInfo extends Component {
       
       }
 
+
+      // An other ways of changing the component values but entered from keyboard
+
+      handleNameChangeFnByEvent=(event)=>{
+        this.setState({
+    
+          persons: [
+            {name: 'Max', age: '23'},
+            {name :event.target.value, age:'34'},
+            {name:'Theoneste', age:'31'}
+                    ]
+                  })
+      
+      }
+
       // return to the previous changes
 
       keepChangePreviousName=()=>{
@@ -47,7 +62,8 @@ class DisplayInfo extends Component {
 
         <Person name ={this.state.persons[1].name}  
         age={this.state.persons[1].age}
-        click={this.handlechangeName} 
+        clicked={this.handlechangeName}  //this is the ways of adding an object that would be taken into pron fn
+        changed={this.handleNameChangeFnByEvent} // this is an object that would support us in entering the names we want
         >
           My hobbies: Racing
            

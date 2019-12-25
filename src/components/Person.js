@@ -13,9 +13,10 @@ import React from 'react';
             are declared within where
             I am calling the person function */}
 
-<p onClick={props.click}>I am  <b>{props.name}</b>   and I am  <b>{props.age}</b></p> 
+<p onClick={props.clicked}>I am  <b>{props.name}</b>   and I am  <b>{props.age}</b></p> 
    {/* This would be useful to dispaly a part of hobbies */}
     <p>{props.children}</p> 
+    <input type= " text" onChange={props.changed} placeholder={props.name}/>
             </div>
     )
 }
